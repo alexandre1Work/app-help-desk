@@ -1,5 +1,5 @@
 <?php
-  require_once '../auth/validador_acesso.php';
+require_once '../auth/validador_acesso.php';
 ?>
 
 <html>
@@ -19,6 +19,11 @@
       <img src="../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
       App Help Desk
     </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="btn btn-outline-danger nav-link pl-3 pr-3" href="../auth/logoff.php">SAIR</a>
+      </li>
+    </ul>
   </nav>
 
   <div class="container">
