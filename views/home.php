@@ -51,6 +51,7 @@ require_once '../auth/validador_acesso.php';
         </div>
       </div>
     </div>
+  </div>
 </body>
 
 </html>
