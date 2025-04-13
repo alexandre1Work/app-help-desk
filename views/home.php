@@ -31,7 +31,7 @@ require_once '../auth/validador_acesso.php';
 
       <div class="card-home">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header text-center fw-bold fs-4">
             Menu
           </div>
           <div class="card-body">

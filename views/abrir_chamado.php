@@ -32,8 +32,8 @@ require_once '../auth/validador_acesso.php';
 
       <div class="card-abrir-chamado">
         <div class="card">
-          <div class="card-header">
-            Abertura de chamado
+          <div class="card-header text-center fw-bold fs-4">
+            Abrir Chamado
           </div>
           <div class="card-body">
             <div class="row">

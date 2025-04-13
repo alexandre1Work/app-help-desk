@@ -32,15 +32,13 @@ fclose($arquivo);
 <body>
 
   <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="home.php">
+      <img src="../assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
       App Help Desk
     </a>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a href="logoff.php" class="nav-link">
-          SAIR
-        </a>
+        <a class="btn btn-outline-danger nav-link pl-3 pr-3" href="../auth/logoff.php">SAIR</a>
       </li>
     </ul>
   </nav>
@@ -50,9 +48,10 @@ fclose($arquivo);
 
       <div class="card-consultar-chamado">
         <div class="card">
-          <div class="card-header">
-            Consulta de chamado
+          <div class="card-header text-center fw-bold fs-4">
+            Consultar Chamado
           </div>
+
 
           <div class="card-body">
 
