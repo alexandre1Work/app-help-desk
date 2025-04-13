@@ -15,7 +15,6 @@ foreach($usuarios_app as $user) {
 }
 
 if($usuário_autenticado) {
-    echo 'Usuário autenticado';
     $_SESSION['autenticado'] = 'SIM';
     header('Location: ../views/home.php');
 } else {
