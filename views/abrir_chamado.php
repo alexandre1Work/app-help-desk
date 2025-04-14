@@ -11,6 +11,7 @@ require_once '../auth/validador_acesso.php';
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="https://kit.fontawesome.com/90a969b901.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
 </head>
 
 <body>

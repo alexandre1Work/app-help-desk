@@ -27,7 +27,7 @@ fclose($arquivo);
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="https://kit.fontawesome.com/90a969b901.js" crossorigin="anonymous"></script>
-  </style>
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -56,7 +56,7 @@ fclose($arquivo);
 
           <div class="card-body">
 
-            <?php foreach ($chamados as $chamado) { ?>
+            <?php foreach ($chamados as $index => $chamado) { ?>
 
               <?php
               $chamado_dados = explode('#', $chamado);
@@ -72,11 +72,20 @@ fclose($arquivo);
                 continue;
               }
               ?>
-              <div class="card mb-3 bg-light">
-                <div class="card-body">
-                  <h5 class="card-title"><?= $chamado_dados[1] ?></h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><?= $chamado_dados[2] ?></h6>
-                  <p class="card-text"><?= $chamado_dados[3] ?></p>
+              <div class="card mb-3 bg-light d-flex flex-row justify-content-between align-items-center p-3">
+                <div>
+                  <h5 class="card-title mb-1"><?= $chamado_dados[1] ?></h5>
+                  <h6 class="card-subtitle mb-1 text-muted"><?= $chamado_dados[2] ?></h6>
+                  <p class="card-text mb-0"><?= $chamado_dados[3] ?></p>
+                </div>
+
+                <div class="d-flex flex-column align-items-end ms-3">
+
+                  <!-- Botão Deletar -->
+                  <form method="POST" action="../controllers/excluir_chamado.php" onsubmit="return confirm('Deseja realmente excluir este chamado?')">
+                    <input type="hidden" name="indice" value="<?= $index ?>">
+                    <button type="submit" class="btn btn-danger btn-sm">Deletar</button>
+                  </form>
                 </div>
               </div>
 
