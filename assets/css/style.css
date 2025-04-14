@@ -1,3 +1,7 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+
 .card-login {
     padding: 30px 0 0 0;
     width: 350px;

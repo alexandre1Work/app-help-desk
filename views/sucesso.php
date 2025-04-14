@@ -17,6 +17,7 @@ if (!isset($_GET['msg']) || $_GET['msg'] !== 'abrir1') {
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://kit.fontawesome.com/90a969b901.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@ if (!isset($_GET['msg']) || $_GET['msg'] !== 'abrir1') {
         </a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="btn btn-outline-danger nav-link pl-3 pr-3" href="../auth/logoff.php">SAIR</a>
+                <a class="btn btn-outline-danger nav-link pl-3 pr-3" href="../auth/logoff.php">SAIR <i class="fa-solid fa-right-from-bracket"></i></a>
             </li>
         </ul>
     </nav>
@@ -39,7 +40,7 @@ if (!isset($_GET['msg']) || $_GET['msg'] !== 'abrir1') {
             <div class="card-home">
                 <div class="card">
                         <div class="card-header bg-success text-white col-12 d-flex justify-content-center">
-                            <h3>Chamado cadastrado com sucesso!</h3>
+                            <h3> <i class="fa-regular fa-circle-check"></i> Chamado cadastrado com sucesso!</h3> 
                         </div>
                         <div class="card-body">
                             <div class="row">
