@@ -3,7 +3,7 @@ session_start();
 
 // Verifica se índice foi enviado
 if (!isset($_POST['indice'])) {
-    header('Location: consultar_chamado.php');
+    header('Location: ../views/consultar_chamado.php');
     exit;
 }
 

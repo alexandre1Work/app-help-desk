@@ -61,7 +61,7 @@ fclose($arquivo);
               <?php
               $chamado_dados = explode('#', $chamado);
 
-              if($_SESSION['perfil_id'] == 2) { 
+              if ($_SESSION['perfil_id'] == 2) {
                 //só exibe os chamados do usuário logado
                 if ($_SESSION['id'] != $chamado_dados[0]) {
                   continue;
@@ -81,11 +81,18 @@ fclose($arquivo);
 
                 <div class="d-flex flex-column align-items-end ms-3">
 
+                  <!-- Botão Editar -->
+                  <form method="POST" action="editar_chamado.php" class="mb-2">
+                    <input type="hidden" name="indice" value="<?= $index ?>">
+                    <button type="submit" class="btn btn-primary btn-sm">&nbsp;<i class="fa-solid fa-pen-to-square">&nbsp;</i></button>
+                  </form>
+
                   <!-- Botão Deletar -->
                   <form method="POST" action="../controllers/excluir_chamado.php" onsubmit="return confirm('Deseja realmente excluir este chamado?')">
                     <input type="hidden" name="indice" value="<?= $index ?>">
-                    <button type="submit" class="btn btn-danger btn-sm">Deletar</button>
+                    <button type="submit" class="btn btn-danger btn-sm">&nbsp;<i class="fa-regular fa-trash-can">&nbsp;</i></button>
                   </form>
+
                 </div>
               </div>
 
